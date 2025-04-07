@@ -1,103 +1,391 @@
+import React from "react";
 import Image from "next/image";
 
-export default function Home() {
+const index = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="max-w-[85%] mx-auto p-10">
+      <div className="flex gap-10 lg:flex-row flex-col">
+        <div className=" w-32 rounded-full relative">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            className="rounded-full object-cover sticky top-24"
+            width={100}
+            height={100}
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="w-full">
+          <h1 className="text-4xl font-bold my-2">Hi, I&apos;m Asad Ali</h1>
+          <h2 className="text-2xl">Front End Developer</h2>
+          <p>
+            I&apos;m a Front End Developer graduate seeking to find the
+            opportunity to work in a challenging working environment that will
+            encourage me to improve and learn new and necessary skills as well
+            as be motivated by the company to do my best for the sake of helping
+            me and the company advancement in the software industry.
+          </p>
+        </div>
+      </div>
+      <div className="lg:w-[80%] w-full mx-auto">
+        <div className="flex lg:flex-row flex-col">
+          <div className="lg:w-1/2 w-full">
+            <p className="text-2xl font-bold my-2 text-blue-600 uppercase">
+              Skills
+            </p>
+            <div className="flex flex-wrap items-center gap-[6px]">
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#FFFFFF] bg-[#048ed8]">
+                HTML
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                CSS
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                Bootstrap
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                Tailwind
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                React JS
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                {" "}
+                Next JS
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                {" "}
+                Gatsby
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                Sanity (CMS)
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                Context Api
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                Redux Toolkit
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                API Integrations
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                Material UI
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                Ant Design
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                JavaScript
+              </p>
+              <p className="rounded-xl text-[12px] lg:text-[14px] py-2 px-3 lg:px-5 text-[#ffffff] bg-[#048ed8]">
+                AOS Animation
+              </p>
+            </div>
+          </div>
+          <div className="lg:w-1/2 w-full">
+            <p className="text-2xl font-bold my-2 text-blue-600 uppercase">
+              Projects
+            </p>
+            <div className="working-experince pt-4 text-[12px] lg:text-[16px]">
+              <div className="working-points flex items-center py-[4px]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  className="text-[#0092db] text-[18px] mr-[5px]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 11h14v2H5z"></path>
+                </svg>
+                <p className="hover:text-[#048ed8]">
+                  Link:{" "}
+                  <a target="blank" href="https://www.umarjewellers.com/">
+                    https://www.umarjewellers.com/
+                  </a>
+                </p>
+              </div>
+              <div className="working-points flex items-center py-[4px]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  className="text-[#0092db] text-[18px] mr-[5px]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 11h14v2H5z"></path>
+                </svg>
+                <p className="hover:text-[#048ed8]">
+                  Link:{" "}
+                  <a target="blank" href="https://mawaste-stage.vercel.app/">
+                    {" "}
+                    https://mawaste-stage.vercel.app/
+                  </a>
+                </p>
+              </div>
+              <div className="working-points flex items-center py-[4px]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  className="text-[#0092db] text-[18px] mr-[5px]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 11h14v2H5z"></path>
+                </svg>
+                <p className="hover:text-[#048ed8]">
+                  Link:{" "}
+                  <a
+                    target="blank"
+                    href="https://agents.synthesys.live/ai-calls"
+                  >
+                    {" "}
+                    https://agents.synthesys.live/ai-calls
+                  </a>
+                </p>
+              </div>
+              <div className="working-points flex items-center py-[4px]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  className="text-[#0092db] text-[18px] mr-[5px]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 11h14v2H5z"></path>
+                </svg>
+                <p className="hover:text-[#048ed8]">
+                  Link:{" "}
+                  <a target="blank" href="https://retcon.netlify.app/">
+                    {" "}
+                    https://retcon.netlify.app/
+                  </a>
+                </p>
+              </div>
+              <div className="working-points flex items-center py-[4px]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  className="text-[#0092db] text-[18px] mr-[5px]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 11h14v2H5z"></path>
+                </svg>
+                <p className="hover:text-[#048ed8]">
+                  Link:{" "}
+                  <a target="blank" href="https://biglittlerobots.vercel.app/">
+                    {" "}
+                    https://biglittlerobots.vercel.app/
+                  </a>
+                </p>
+              </div>
+              <div className="working-points flex items-center py-[4px]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  className="text-[#0092db] text-[18px] mr-[5px]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 11h14v2H5z"></path>
+                </svg>
+                <p className="hover:text-[#048ed8]">
+                  Link:{" "}
+                  <a target="blank" href="https://theattributes.com/">
+                    {" "}
+                    https://theattributes.com/
+                  </a>
+                </p>
+              </div>
+              <div className="working-points flex items-center py-[4px]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  className="text-[#0092db] text-[18px] mr-[5px]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 11h14v2H5z"></path>
+                </svg>
+                <p className="hover:text-[#048ed8]">
+                  Link:{" "}
+                  <a target="blank" href="https://saver.charlie.com/">
+                    {" "}
+                    https://saver.charlie.com/
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          {" "}
+          <p className="text-2xl font-bold my-2 text-blue-600 uppercase">
+            Education
+          </p>
+          <div className="working-experince pt-4">
+            <h2 className="working-as font-bold text-lg">
+              Bachelor of Computer science
+            </h2>
+            <h2 className="company-name text-[18px] font-[500]">
+              comsats university abbottabad
+            </h2>
+            <div className="data-location flex justify-between text-sm italic pb-2 border-b-[1px]">
+              <p className="start-date opacity-[0.8]">2021 - 2025</p>
+              <p className="location opacity-[0.8]">Abbottabad</p>
+            </div>
+          </div>
+          <div className="working-experince pt-4">
+            <h2 className="working-as font-bold text-lg">FSC</h2>
+            <h2 className="company-name text-[18px] font-[500]">Dg khan</h2>
+            <div className="data-location flex justify-between text-sm italic pb-2 border-b-[1px]">
+              <p className="start-date opacity-[0.8]">2021</p>
+              <p className="location opacity-[0.8]">Dg khan</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p className="text-2xl font-bold my-2 text-blue-600 uppercase">
+            WORK EXPERIENCE
+          </p>
+          <div className="working-experince pt-4">
+            <h2 className="working-as font-bold text-lg">Frontend Developer</h2>
+            <h2 className="company-name text-[18px] font-[500]">Geekshub</h2>
+            <div className="data-location flex justify-between text-sm italic pb-2 border-b-[1px]">
+              <p className="start-date opacity-[0.8]">2021 - 2025</p>
+              <p className="location opacity-[0.8]">Abbottabad</p>
+            </div>
+            <div className="working-points flex items-center py-[4px]">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 24 24"
+                className="text-[#0092db] text-[18px] mr-[5px]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 11h14v2H5z"></path>
+              </svg>
+              <p className="disc text-[14px] 2xl:text-lg 2xl:text-lg">
+                Working with React JS, Next JS, Tailwind CSS, JavaScript, HTML,
+                Gatsby, Sanity(CMS)
+              </p>
+            </div>
+            <div className="working-points flex items-center py-[4px]">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 24 24"
+                className="text-[#0092db] text-[18px] mr-[5px]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 11h14v2H5z"></path>
+              </svg>
+              <p className="disc text-[14px] 2xl:text-lg 2xl:text-lg">
+                Convert website design and link a concept with HTML, CSS, and
+                JavaScript
+              </p>
+            </div>
+            <div className="working-points flex items-center py-[4px]">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 24 24"
+                className="text-[#0092db] text-[18px] mr-[5px]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 11h14v2H5z"></path>
+              </svg>
+              <p className="disc text-[14px] 2xl:text-lg 2xl:text-lg">
+                Building responsive and interactive UI designs.
+              </p>
+            </div>
+            <div className="working-points flex items-center py-[4px]">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 24 24"
+                className="text-[#0092db] text-[18px] mr-[5px]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 11h14v2H5z"></path>
+              </svg>
+              <p className="disc text-[14px] 2xl:text-lg 2xl:text-lg">
+                A high level of experience with Bootstrap, Tailwind, and the CSS
+                GRID system.
+              </p>
+            </div>
+            <div className="working-points flex items-center py-[4px]">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 24 24"
+                className="text-[#0092db] text-[18px] mr-[5px]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 11h14v2H5z"></path>
+              </svg>
+              <p className="disc text-[14px] 2xl:text-lg 2xl:text-lg">
+                Implementing design changes
+              </p>
+            </div>
+            <div className="working-points flex items-center py-[4px]">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 24 24"
+                className="text-[#0092db] text-[18px] mr-[5px]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 11h14v2H5z"></path>
+              </svg>
+              <p className="disc text-[14px] 2xl:text-lg 2xl:text-lg">
+                Focus on clean and safe coding practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+export default index;
