@@ -34,7 +34,7 @@ const index = () => {
       </div>
       <div className="lg:w-[80%] w-full mx-auto">
         <div className="flex lg:flex-row flex-col">
-          <div className="lg:w-1/6 w-full">
+          <div className="lg:w-2/3 w-full">
             <p className="text-2xl font-bold my-2 text-blue-600 uppercase">
               Skills
             </p>
@@ -551,7 +551,7 @@ const index = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 w-full">
+          <div className="lg:w-1/3 w-full">
             <p className="text-2xl font-bold my-2 text-blue-600 uppercase">
               Projects
             </p>
