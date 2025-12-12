@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 
-const index = () => {
+const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -497,4 +497,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
